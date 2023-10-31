@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lista de Imoveis</title>
+    </head>
+    <body>
+        <h1>Lista de Imoveis</h1>
+        <ul>
+            {% for imoveis in imoveis %}
+            <li>{{ imoveis.address }} por {{ imoveis.status }}</li>
+            {% endfor %}
+        </ul>
+    </body>
+</html>
